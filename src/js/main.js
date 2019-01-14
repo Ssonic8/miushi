@@ -1,14 +1,17 @@
 $(document).ready(function(){
-	let menu = document.querySelector('.main-nav'),
+	let navList = document.querySelector('.main-nav__list'),
+			contactsList = document.querySelector('.main-nav__contacts'),
 			menuButton = document.querySelector('.main-nav__toggle'),
 			closeButton = document.querySelector('.main-nav-close');
 
 	menuButton.addEventListener('click', function(evt){
 		evt.preventDefault();
-		menu.classList.add('main-nav--active');
+		navList.classList.add('main-nav__list--active');
+		contactsList.classList.add('main-nav__contacts--active');
 		closeButton.addEventListener('click', function(evt){
 			evt.preventDefault();
-			menu.classList.remove('main-nav--active');
+			navList.classList.remove('main-nav__list--active');
+			contactsList.classList.remove('main-nav__contacts--active');
 		});
 	});
 
@@ -18,7 +21,14 @@ $(document).ready(function(){
 		center: true,
 		margin: 10,
 		navText: ["",""],
-		nav: false,
+		responsive: {
+				0: {
+					nav: false
+				},
+				1170: {
+					nav: true
+				}
+			},
 		pagination: true
 	});
 	// $('#team-carousel').owlCarousel({
