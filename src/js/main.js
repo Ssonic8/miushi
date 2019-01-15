@@ -31,14 +31,21 @@ $(document).ready(function(){
 			},
 		pagination: true
 	});
-	// $('#team-carousel').owlCarousel({
-	// 	items: 1,
-	// 	loop: true,
-	// 	center: true,
-	// 	margin: 10,
-	// 	navText: ["",""],
-	// 	nav: true
-	// });
+	$('.owl-carousel').owlCarousel({
+		items: 1,
+		loop: true,
+		center: true,
+		margin: 2,
+		responsive: {
+				0: {
+					pagination: false
+				},
+				1170: {
+					pagination: true
+				}
+			},
+		nav: false
+	});
 	// $('#docs-carousel').owlCarousel({
 	// 	items: 3,
 	// 	loop: true,
