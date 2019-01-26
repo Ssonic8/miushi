@@ -31,7 +31,7 @@ $(document).ready(function(){
 			},
 		pagination: true
 	});
-	$('.owl-carousel').owlCarousel({
+	$('.catalog__slider').owlCarousel({
 		loop: true,
 		center: true,
 		margin: 2,
@@ -40,7 +40,7 @@ $(document).ready(function(){
 					items: 1,
 					pagination: false
 				},
-				720: {
+				750: {
 					items: 3,
 					nav: true,
 					navText: ["",""],
@@ -55,12 +55,26 @@ $(document).ready(function(){
 			},
 		nav: false
 	});
-	// $('#docs-carousel').owlCarousel({
-	// 	items: 3,
-	// 	loop: true,
-	// 	center: true,
-	// 	margin: 10,
-	// 	navText: ["",""],
-	// 	nav: true
-	// });
+	$('#reviews-carousel').owlCarousel({
+		loop: true,
+		center: false,
+		margin: 10,
+		responsive: {
+				0: {
+					nav: false,
+					pagination: false,
+					items: 1
+				},
+				750: {
+					nav: false,
+					pagination: false,
+					items: 2
+				},
+				1170: {
+					nav: false,
+					pagination: false,
+					items: 3
+				}
+			}
+	});
 });

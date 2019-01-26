@@ -1,0 +1,36 @@
+.reviews {
+	&__title {
+		& img {
+			display: none;
+		}
+	}
+	&__slider {
+		margin-bottom: 60px;
+	}
+	&__slide-img{
+		// width: 290px;
+	}
+}
+
+
+@media (min-width: #{$tablet-width}) {
+	.reviews {
+		&__title {
+			& img {
+				display: inline-block;
+			}
+		}
+		&__slider {
+		margin-bottom: 80px;
+		}
+	}
+}
+
+
+@media (min-width: #{$desktop-width}) {
+	.reviews {
+		&__slider {
+		margin-bottom: 110px;
+		}
+	}
+}

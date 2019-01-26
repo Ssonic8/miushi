@@ -1292,6 +1292,7 @@ input[type="checkbox"].visually-hidden {
 
 .features__button {
   display: block;
+  margin-bottom: 25px;
   text-align: center;
   background-color: transparent;
   border: 1px solid #fd4f10;
@@ -1332,5 +1333,29 @@ input[type="checkbox"].visually-hidden {
 
   .features__button {
     display: none;
+  }
+}
+
+.reviews__title img {
+  display: none;
+}
+
+.reviews__slider {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .reviews__title img {
+    display: inline-block;
+  }
+
+  .reviews__slider {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .reviews__slider {
+    margin-bottom: 110px;
   }
 }
