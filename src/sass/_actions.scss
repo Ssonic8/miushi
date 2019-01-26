@@ -1,0 +1,82 @@
+.actions {
+	background: url('../img/actions/actions-bg.jpg') top center no-repeat;
+	min-height: 610px;
+	&__buttons {
+		padding-top: 45px;
+	}
+	&__button {
+		cursor: pointer;
+		margin-right: 55px;
+		background-color: transparent;
+		border: transparent;
+		font-size: 17px;
+		color: #999;
+		&--active {
+			color: #fd4f10;
+		}
+	}
+	&__slide {
+		&-newtag {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 16px;
+			left: 1px;
+			transform: rotate(315deg);
+			width: 60px;
+			height: 30px;
+			background-color: $color-green;
+			font-family: 'Roboto Slab', serif;
+			font-size: 15px;
+			font-weight: bold;
+			color: #fff;
+			&:before {
+				position: absolute;
+				content:'';
+				top: -1;
+				left: -29px;
+				width: 0;
+				height: 0;
+				border-bottom: 30px solid $color-green; 
+				border-left: 30px solid transparent;
+			}
+			&:after {
+				position: absolute;
+				content:'';
+				top: 0;
+				right: -29px;
+				width: 0;
+				height: 0;
+				border-bottom: 30px solid $color-green; 
+				border-right: 30px solid transparent;
+			}
+		}
+	}
+}
+
+
+
+
+@media (min-width: #{$tablet-width}) {
+	.actions {
+		min-height: 690px;
+		&__buttons {
+			padding-top: 60px;
+		}
+		&__button {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+}
+
+
+
+
+
+@media (min-width: #{$desktop-width}) {
+	.actions {
+		min-height: 740px;
+	}
+}
