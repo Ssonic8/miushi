@@ -32,15 +32,24 @@ $(document).ready(function(){
 		pagination: true
 	});
 	$('.owl-carousel').owlCarousel({
-		items: 1,
 		loop: true,
 		center: true,
 		margin: 2,
 		responsive: {
 				0: {
+					items: 1,
 					pagination: false
 				},
+				720: {
+					items: 3,
+					nav: true,
+					navText: ["",""],
+					pagination: true
+				},
 				1170: {
+					items: 4,
+					nav: true,
+					navText: ["",""],
 					pagination: true
 				}
 			},

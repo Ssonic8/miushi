@@ -814,26 +814,12 @@ input[type="checkbox"].visually-hidden {
   }
 }
 
-.catalog__set-title {
-  margin-bottom: 24px;
-  padding-top: 40px;
-}
-
-.catalog__roll-title {
-  padding-top: 20px;
-}
-
-.catalog__pizza-title {
-  padding-top: 20px;
-}
-
-.catalog__pizza-title span {
-  padding: 0;
+.catalog {
+  padding-bottom: 90px;
 }
 
 .catalog__slider {
   width: 290px;
-  height: 450px;
 }
 
 .catalog__slide {
@@ -850,7 +836,6 @@ input[type="checkbox"].visually-hidden {
   align-items: center;
   margin: 20px auto;
   width: 228px;
-  height: 434px;
   border-radius: 8px;
   -webkit-box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.18);
   box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.18);
@@ -897,6 +882,9 @@ input[type="checkbox"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
@@ -928,7 +916,7 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 195px;
 }
 
@@ -989,6 +977,7 @@ input[type="checkbox"].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;
@@ -1004,4 +993,161 @@ input[type="checkbox"].visually-hidden {
   width: 22px;
   height: 20px;
   background: url("../img/icons/shopping-cart-white.png") center no-repeat;
+}
+
+.catalog__slide-extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 195px;
+}
+
+.catalog__slide-extra label {
+  font-size: 12px;
+}
+
+.catalog__slide-extra input {
+  padding: 5px 20px 5px 5px;
+  width: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.catalog__slide-extra-button {
+  width: 19px;
+  height: 19px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #fd4f10;
+  color: #fff;
+}
+
+.catalog__slide-extra select {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.catalog__set-title {
+  margin-bottom: 24px;
+  padding-top: 40px;
+}
+
+.catalog__roll-title {
+  padding-top: 20px;
+}
+
+.catalog__pizza-title {
+  padding-top: 20px;
+}
+
+.catalog__pizza-title span {
+  padding: 0;
+}
+
+.catalog__wok-slider {
+  height: 520px;
+}
+
+.catalog__wok-slide .catalog__slide-cost {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .catalog__slider {
+    width: 720px;
+  }
+
+  .catalog__slide {
+    width: 220px;
+  }
+
+  .catalog__roll-title {
+    padding-top: 55px;
+  }
+
+  .catalog__pizza-title {
+    padding-top: 55px;
+  }
+
+  .catalog__wok-title {
+    padding-top: 55px;
+  }
+
+  .owl-carousel .owl-dots {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -65px;
+    width: 130px;
+    height: 10px;
+  }
+
+  .owl-carousel .owl-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #b3b3b3 !important;
+    border: 2px solid #b3b3b3;
+    border-radius: 50%;
+  }
+
+  .owl-carousel .owl-dot.active {
+    background-color: #1fba0a;
+    border: 2px solid #1fba0a;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    margin-left: -130px;
+    width: 27px;
+    height: 20px;
+    background: url("../img/icons/catalog-arrow.jpg") center no-repeat;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    margin-left: 103px;
+    width: 27px;
+    height: 20px;
+    background: url("../img/icons/catalog-arrow.jpg") center no-repeat;
+  }
+}
+
+@media (min-width: 1170px) {
+  .catalog__slider {
+    width: 1140px;
+  }
+
+  .catalog__slide {
+    width: 263px;
+  }
 }
