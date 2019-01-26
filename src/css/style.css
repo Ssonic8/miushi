@@ -1359,3 +1359,147 @@ input[type="checkbox"].visually-hidden {
     margin-bottom: 110px;
   }
 }
+
+.feedback {
+  background: #161326 url("../img/feedback/bg-mobile.jpg") top center no-repeat;
+  color: #fff;
+}
+
+.feedback__title {
+  margin-top: 16px;
+  margin-bottom: 34px;
+  text-align: left;
+  color: #fff;
+}
+
+.feedback__subtitle {
+  margin: 0;
+  padding-top: 50px;
+}
+
+.feedback__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.feedback__form input {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  width: 272px;
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.feedback__form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.feedback__form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.feedback__form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.feedback__form input::placeholder {
+  color: #fff;
+}
+
+.feedback__form input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.feedback__button {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 286px;
+}
+
+.feedback p {
+  margin-bottom: 36px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  .feedback {
+    background: #161326 url("../img/feedback/bg-tablet.jpg") top center no-repeat;
+  }
+
+  .feedback__subtitle {
+    padding-top: 70px;
+  }
+
+  .feedback__title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  .feedback__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+
+  .feedback__form input {
+    width: 205px;
+  }
+
+  .feedback__button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 220px;
+  }
+
+  .feedback p {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .feedback {
+    background: #161326 url("../img/feedback/bg-desktop.jpg") top center no-repeat;
+  }
+
+  .feedback__wrapper {
+    width: 770px;
+    margin-left: auto;
+  }
+
+  .feedback__form input {
+    width: 240px;
+  }
+
+  .feedback__button {
+    width: 190px;
+  }
+}
