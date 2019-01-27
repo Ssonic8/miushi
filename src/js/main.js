@@ -1,19 +1,4 @@
 $(document).ready(function(){
-	let navList = document.querySelector('.main-nav__list'),
-			contactsList = document.querySelector('.main-nav__contacts'),
-			menuButton = document.querySelector('.main-nav__toggle'),
-			closeButton = document.querySelector('.main-nav-close');
-
-	menuButton.addEventListener('click', function(evt){
-		evt.preventDefault();
-		navList.classList.add('main-nav__list--active');
-		contactsList.classList.add('main-nav__contacts--active');
-		closeButton.addEventListener('click', function(evt){
-			evt.preventDefault();
-			navList.classList.remove('main-nav__list--active');
-			contactsList.classList.remove('main-nav__contacts--active');
-		});
-	});
 
 	$('#header-carousel').owlCarousel({
 		items: 1,
@@ -77,4 +62,30 @@ $(document).ready(function(){
 				}
 			}
 	});
+
+	let navList = document.querySelector('.main-nav__list'),
+			contactsList = document.querySelector('.main-nav__contacts'),
+			menuButton = document.querySelector('.main-nav__toggle'),
+			closeButton = document.querySelector('.main-nav-close'),
+			footerHeaderSpan = document.querySelectorAll('.footer__menu-header span'),
+			footerHeader = document.querySelectorAll('.footer__menu-header'),
+			footerMenu = document.querySelectorAll('.footer__menu-list');
+
+	menuButton.addEventListener('click', function(evt){
+		evt.preventDefault();
+		navList.classList.add('main-nav__list--active');
+		contactsList.classList.add('main-nav__contacts--active');
+		closeButton.addEventListener('click', function(evt){
+			evt.preventDefault();
+			navList.classList.remove('main-nav__list--active');
+			contactsList.classList.remove('main-nav__contacts--active');
+		});
+	});
+	for (var i = 0; footerHeaderSpan.length; i++){
+		footerHeaderSpan[i].addEventListener('click', function(evt){
+			evt.preventDefault();
+			footerMenu[i].classList.toggle('footer__menu-list--active');
+			footerHeader[i].classList.toggle('footer__menu-header--active');
+		});
+	};	
 });
