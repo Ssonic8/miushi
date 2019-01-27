@@ -91,7 +91,6 @@ ul {
 
 .container {
   margin: 0 auto;
-  border: 1px solid red;
   padding: 0 0;
   width: 290px;
 }
@@ -99,14 +98,12 @@ ul {
 @media (min-width: 768px) {
   .container {
     width: 720px;
-    /* width: 98%; */
   }
 }
 
 @media (min-width: 1170px) {
   .container {
     width: 1140px;
-    /* width: 98%; */
   }
 }
 
