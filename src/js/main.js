@@ -5,13 +5,13 @@ $(document).ready(function(){
 		loop: true,
 		center: true,
 		margin: 10,
-		navText: ["",""],
 		responsive: {
 				0: {
 					nav: false
 				},
 				1170: {
-					nav: true
+					nav: false,
+					navText: ["",""]
 				}
 			},
 		pagination: true
